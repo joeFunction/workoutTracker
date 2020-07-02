@@ -17,7 +17,7 @@ apiRoutes(app)
 var htmlRoutes = require("./routes/htmlroutes")
 htmlRoutes(app)
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds125225.mlab.com:25225/heroku_6stz9wwx")
 
 
 app.listen(PORT, function () {
